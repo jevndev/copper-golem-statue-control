@@ -16,15 +16,15 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"jevndev.copper_golem_statue_control.CopperGolemStatueControl"
+			"dev.jevn.copper_golem_statue_control.CopperGolemStatueControl"
 		]
 	},
 	"mixins": [
 		"copper-golem-statue-control.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~26.2",
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~26.1.2",
 		"java": ">=25",
 		"fabric-api": "*"
 	}

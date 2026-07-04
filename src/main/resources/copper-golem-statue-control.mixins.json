@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "jevndev.copper_golem_statue_control.mixin",
+	"package": "dev.jevn.copper_golem_statue_control.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+		"CopperGolemStatueBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
