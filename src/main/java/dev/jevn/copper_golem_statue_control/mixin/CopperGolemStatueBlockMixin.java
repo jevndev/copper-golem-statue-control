@@ -34,6 +34,13 @@ public class CopperGolemStatueBlockMixin extends Block {
         }
     }
 
+    @Override
+    public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean movedByPiston) {
+        if (level instanceof ServerLevel serverLevel) {
+            this.updatePose(state, serverLevel, pos);
+        }
+    }
+
 
     private void updatePose(BlockState state, ServerLevel level, BlockPos pos) {
         if (level.hasNeighborSignal(pos))
