@@ -3,7 +3,6 @@ package dev.jevn.copper_golem_statue_control.mixin;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
 
-import dev.jevn.copper_golem_statue_control.CopperGolemStatueControl;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -30,7 +29,6 @@ public class CopperGolemStatueBlockMixin extends Block {
             final @Nullable Orientation orientation,
             final boolean movedByPiston
     ) {
-        CopperGolemStatueControl.LOGGER.info("Neighbor block changed at position: " + pos);
         if (level instanceof ServerLevel serverLevel) {
             this.updatePose(state, serverLevel, pos);
         }
